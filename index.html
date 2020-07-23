@@ -18,6 +18,9 @@ var mapProp= {
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
+
+var marker = new google.maps.Marker({position: myCenter});
+marker.setMap(map); 
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxeYfH9j40xYeHQjkbmlMQJWqCGDuWEI0&callback=myMap"></script>
